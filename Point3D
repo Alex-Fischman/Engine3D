@@ -1,4 +1,4 @@
-package org.fischman.alex.simpleworld;
+package com.example;
 
 class Point3D implements Object3D {
 	float x;
