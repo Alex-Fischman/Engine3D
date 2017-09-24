@@ -1,6 +1,6 @@
-package com.example;
+package org.fischman.alex.simpleworld.Engine3D;
 
-interface Object3D {
+public interface Object3D {
 	float[] getVertexData();
 
 	float[] getColorData();

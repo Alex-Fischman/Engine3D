@@ -1,24 +1,24 @@
-package com.example;
+package org.fischman.alex.simpleworld.Engine3D;
 
-class Triangle3D implements Object3D {
-	Point3D v1;
-	Point3D v2;
-	Point3D v3;
+public class Triangle3D implements Object3D {
+	public Point3D v1;
+	public Point3D v2;
+	public Point3D v3;
 
-	Triangle3D(Point3D i1, Point3D i2, Point3D i3, float[] iColor) {
+	public Triangle3D(Point3D i1, Point3D i2, Point3D i3, float[] iColor) {
 		this(i1, i2, i3);
 		v1.mColor = iColor;
 		v2.mColor = iColor;
 		v3.mColor = iColor;
 	}
 
-	Triangle3D(Point3D i1, Point3D i2, Point3D i3) {
+	public Triangle3D(Point3D i1, Point3D i2, Point3D i3) {
 		v1 = i1;
 		v2 = i2;
 		v3 = i3;
 	}
 
-	Triangle3D() {
+	public Triangle3D() {
 		this(new Point3D(), new Point3D(), new Point3D());
 	}
 

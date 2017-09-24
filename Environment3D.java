@@ -1,26 +1,26 @@
-package com.example;
+package org.fischman.alex.simpleworld.Engine3D;
 
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 
-class Environment3D extends GLSurfaceView {
+public class Environment3D extends GLSurfaceView {
 	private Renderer3D mRenderer;
 
-	void translateCamera(float x, float y, float z) {
+	public void translateCamera(float x, float y, float z) {
 		mRenderer.xTranslate += x;
 		mRenderer.yTranslate += y;
 		mRenderer.zTranslate += z;
 	}
 
-	void setCameraPosition(float x, float y, float z) {
+	public void setCameraPosition(float x, float y, float z) {
 		mRenderer.xTranslate = x;
 		mRenderer.yTranslate = y;
 		mRenderer.zTranslate = z;
 	}
 
-	void rotateCamera(float x, float y) {
+	public void rotateCamera(float x, float y) {
 		mRenderer.xAngle += x;
 		mRenderer.yAngle += y;
 		if (mRenderer.yAngle > 90) {
@@ -30,7 +30,7 @@ class Environment3D extends GLSurfaceView {
 		}
 	}
 
-	void setCameraRotation(float x, float y) {
+	public void setCameraRotation(float x, float y) {
 		mRenderer.xAngle = x;
 		mRenderer.yAngle = y;
 		if (mRenderer.yAngle > 90) {
@@ -40,7 +40,7 @@ class Environment3D extends GLSurfaceView {
 		}
 	}
 
-	Environment3D(Context context, Object3D[] object3Ds) {
+	public Environment3D(Context context, Object3D[] object3Ds) {
 		super(context);
 		setEGLContextClientVersion(2);
 		mRenderer = new Renderer3D();
@@ -50,15 +50,15 @@ class Environment3D extends GLSurfaceView {
 		mScaleDetector = new ScaleGestureDetector(context, new PinchListener());
 	}
 
-	Environment3D(Context context) {
+	public Environment3D(Context context) {
 		this(context, new Object3D[0]);
 	}
 
-	void addObject(Object3D object3D) {
+	public void addObject(Object3D object3D) {
 		mRenderer.addObject(object3D);
 	}
 
-	void addObjects(Object3D... object3Ds) {
+	public void addObjects(Object3D[] object3Ds) {
 		mRenderer.addObjects(object3Ds);
 	}
 

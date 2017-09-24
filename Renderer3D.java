@@ -1,4 +1,4 @@
-package org.example;
+package org.fischman.alex.simpleworld.Engine3D;
 
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;

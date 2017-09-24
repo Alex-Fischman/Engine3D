@@ -1,4 +1,4 @@
-package com.example;
+package org.fischman.alex.simpleworld.Engine3D;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
