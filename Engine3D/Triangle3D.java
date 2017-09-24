@@ -1,4 +1,4 @@
-package org.fischman.alex.simpleworld.Engine3D;
+package com.example;
 
 public class Triangle3D implements Object3D {
 	public Point3D v1;
