@@ -18,3 +18,5 @@ Another struct-like class that holds 3 Point3D's while also satisfying the Objec
 # Object3DHolder
 Holds an ArrayList of Object3D's. Provides FloatBuffer returning methods that can be called by a Renderer3D. These methods allow the Renderer3D to access vertex and color data from all the Object3D's contained in the ArrayList.
 >Special needs: Object3D
+# Sidenote
+When adding these files to your project, remember to change "com.example" to whatever your project is.
